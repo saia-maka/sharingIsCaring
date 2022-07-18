@@ -1,0 +1,470 @@
+body {
+  /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+}
+
+.app {
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+/* header styling */
+
+.header-wrapper {
+  background-color: lightgreen;
+  width: 100%;
+  height: 17vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url('/images/goldheader.jpg');
+  /* background-image: url('/images/goldheader2.png'); */
+  background-position: top;
+  background-size: cover;
+  border-bottom: 2pt solid white;
+}
+
+.header-title {
+  font-size: 4.8em;
+  /* font-family: 'Rubik Moonrocks', cursive; */
+  /* font-family: 'Dancing Script', cursive; */
+  font-family: 'The Nautigal', cursive;
+  font-weight: bold;
+  text-shadow: -2px -3px 1px rgb(165, 120, 5);
+  color: white;
+}
+
+/* response styling for header*/
+@media (min-width: 320px) and (max-width:668px) {
+
+}
+
+  @media (min-width: 279px) and (max-width:668px) {
+    .header-wrapper {
+      height: 10vh;
+    }
+
+    .header-title {
+      font-size:3.5em;
+    }
+  }
+
+  @media (min-width: 669px) and (max-width:1000px) {
+    .header-wrapper {
+      height: 12vh;
+    }
+    }
+  
+/* response styling for header*/
+
+
+/* header styling */
+
+/* tile list stying */
+.tilelist-wrapper {
+  width: 100%;
+  height: auto;
+  background-color: white;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+/* tile list stying */
+
+/* tile styling */
+
+.tile-wrapper {
+  margin: 1em 0 1em 0;
+  width: 30%;
+  height: 25vh;
+  border-bottom: 1pt solid gold;
+  box-shadow: 2px 3px 3px rgba(0, 0, 0, 0.2);
+  /* background-image: url('/images/black.jpg');
+  background-size: cover;
+  background-position: center; */
+  background-color: rgba(0, 0, 0, 0.9);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: all ease 500ms;
+  border-radius: 10px;
+}
+
+.tile-wrapper:hover {
+  cursor: pointer;
+  border-bottom: 1pt solid rgba(255, 217, 0, 0.5);
+  box-shadow: 3px 5px 4px rgba(0, 0, 0, 0.8);
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.tile-title {
+  color: white;
+  font-family: 'Dancing Script', cursive;
+  /* font-family: 'The Nautigal', cursive; */
+  font-size: 2.3em;
+  font-weight: lighter;
+}
+
+.tile-delete-btn {
+width:20%;
+height:2em;
+font-family: 'Dancing Script', cursive;
+font-size: 1.5em;
+background-color: transparent;
+text-decoration: underline;
+border: none;
+color: gold;
+}
+
+.tile-delete-btn:hover {
+  cursor: pointer;
+}
+
+/* responsive styling for tile */
+
+@media (min-width: 669px) and (max-width:1000px) {
+  .tile-wrapper {
+    width: 40%;
+  }
+
+  
+}
+@media (min-width: 279px) and (max-width:668px) {
+  .tile-wrapper {
+    width: 80%;
+  }
+  .tile-title {
+    font-size: 2em;
+  }
+}
+/* responsive styling for tile */
+
+
+/* tile styling */
+
+
+/* add tile styling */
+
+.add-tile-wrapper {
+  width: 80%;
+  height: 15vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: rgba(0, 0, 0, 0.9);
+  border-bottom: 2pt solid gold;
+  margin: 1em;
+}
+
+.add-tile-input {
+  width: 50%;
+  height: 17%;
+  border: none;
+}
+
+.add-tile-btn {
+  width: 15%;
+  height: 2em;
+  margin: 0.5em;
+}
+
+/* response styling for add tile */
+
+@media (min-width: 669px) and (max-width:1000px) {
+  .add-tile-wrapper {
+    width: 95%;
+  }
+
+  .add-tile-input {
+    width: 70%;
+    height: 22%;
+    font-size: 1.3em;
+  }
+
+  .add-tile-btn {
+    height:22%;
+    width: 30%;
+    font-size: 1.3em;
+  }
+}
+
+@media (min-width: 279px) and (max-width:668px) {
+  .add-tile-wrapper {
+    width: 100%;
+  height: 16vh;
+  }
+
+  .add-tile-input {
+    width: 70%;
+    height: 20%;
+  }
+
+  .add-tile-btn {
+    width: 30%;
+  }
+}
+/* response styling for add tile */
+
+
+/* add tile styling */
+
+
+/* review list styling */
+
+.review-list-wrapper {
+  width: 65%;
+  height: 82vh;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.review-list-title {
+  font-family: 'Dancing Script', cursive;
+  font-size: 2.5em;
+  text-shadow: 2px 2px 2px goldenrod;
+  margin: 0.5em;
+}
+
+/* responsive styling for review list */
+@media (min-width: 279px) and (max-width:668px) {
+  .review-list-wrapper  {
+    width: 90%;
+
+  }
+
+}
+/* responsive styling for review list */
+
+
+/* review list styling */
+
+/* review styling */
+
+.review-wrapper {
+  width: 90%;
+  height: auto;
+  border-bottom: 2pt solid gold;
+  background-color: black;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 3em;
+  box-shadow: 2px 3px 3px rgba(0, 0, 0, 0.2);
+  border-radius: 15px;
+}
+
+.reviewer-info-wrapper {
+  width: 25%;
+  height: 15vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.reviewer-profile-img {
+  width: 35%;
+  height: 55%;
+  border-radius: 50%;
+  margin: 0;
+}
+
+.review-name {
+  margin: 0;
+  font-size: 1.2em;
+  font-family: 'Dancing Script', cursive;
+  color: white;
+}
+
+.reviewer-comment-wrapper {
+  width: 70%;
+  height: auto;
+  font-family: sans-serif;
+  font-weight: lighter;
+  text-align: center;
+  background-color: white;
+  /* border: 1px solid black; */
+  border-radius: 0.2em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.review-comment {
+  font-size: 1.1em;
+  font-family: sans-serif;
+  font-weight: lighter;
+}
+
+/* review styling */
+
+/* item styling */
+
+.item-wrapper {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+
+/* responsive styling for item */
+
+@media (min-width: 320px) and (max-width:668px) {
+  .item-wrapper {
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+  }
+}
+/* responsive styling for item */
+
+
+/* item styling */
+
+/* item info styling */
+
+.item-info-wrapper {
+  width: 35%;
+  height: 82vh;
+  /* background-image: url('/images/item-cover.jpg');
+  background-size: cover;
+  background-position: center; */
+  background-color: black;
+  border-right: 2pt solid gold;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.item-title {
+  font-size: 3em;
+  color: white;
+  font-family: 'Dancing Script', cursive;
+  font-weight: lighter;
+  max-width: 70%;
+  text-align: center;
+  margin: 0;
+}
+
+.item-link-wrapper {
+  width:50%;
+  height:10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.item-info-return-link {
+  color: gold;
+  font-size:1.6em;
+  font-weight: lighter;
+  font-family: 'Dancing Script', cursive;
+  background-color: transparent;
+  padding: 0.1em 0.5em 0.1em 0.5em;
+  transition: all ease 500ms;
+  border: none;
+  text-decoration: underline;
+}
+
+.item-info-return-link:hover {
+  cursor: pointer;
+}
+
+.item-owner-name {
+  margin: 0;
+  color: white;
+  font-family: 'Dancing Script', cursive;
+  font-size: 1.5em;
+}
+
+/* responsive stling for item info */
+@media (min-width: 279px) and (max-width: 668px) {
+  .item-info-wrapper {
+    width: 100%;
+    height: 30vh;
+  }
+  .item-title {
+    width: 95%;
+  }
+
+  .item-info-return-link {
+    width: 100%;
+  }
+}
+/* responsive stling for item info */
+
+
+/* item info styling */
+
+
+
+/* review input styling */
+
+.review-input-wrapper {
+  width: 60%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 0.2em;
+
+}
+
+.review-name-input {
+  width: 80%;
+  height: 1.5em;
+  margin: 0.5em;
+  resize: none;
+  font-family: sans-serif;
+}
+
+.review-input-a {
+  width: 60%;
+  height: 1.5em;
+  margin: 0.5em;
+  resize: none;
+  font-family: sans-serif;
+}
+
+.review-input {
+  width: 60%;
+  height: 3.5em;
+  margin: 0.5em;
+  resize: none;
+  font-family: sans-serif;
+}
+
+.review-input-btn {
+  width: 30%;
+  height: 2em;
+  margin: 0.5em;
+}
+
+/* responsive styling for review */
+@media (min-width: 320px) and (max-width:668px) {
+  .review-input-wrapper {
+    width: 100%;
+  }
+}
+
+@media (min-width: 668px) and (max-width: 1000px) {
+  .review-input-wrapper {
+    width: 80%;
+    margin: 1em;
+  }
+}
+
+/* review input styling */
